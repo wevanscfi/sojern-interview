@@ -22,7 +22,7 @@ https://helm.sh/docs/intro/install/
 # Commonly Used Values
 
 | Value | Default | Description |
---------------------------------- 
+| ----- | ------- | ---------------  |
 | replicaCount | 3 | Int: The number of replicas to create the nginx deployment with | 
 | env | { ENV: PROD } | Dict:  of values to pass to the deployment as environment variables |
 | autoscaling.enabled | true | Bool: enable or disable a HPA for the deployment |
@@ -33,8 +33,8 @@ https://helm.sh/docs/intro/install/
 
 # Contributing 
 - validate the helm charts `helm lint ./`
-- check the manifest output `helm template ./
-- get updates for diff `helm upgrade --install quirky-walrus ./ --dry-run --debug``
+- check the manifest output `helm template ./`
+- get updates for diff `helm upgrade --install quirky-walrus ./ --dry-run --debug`
 
 # Notes for the interviewer 
 This helm template was boot strapped with `helm chart create` and then developed to meet the requirements of the exercise.

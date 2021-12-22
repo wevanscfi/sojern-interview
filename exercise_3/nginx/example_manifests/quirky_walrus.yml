@@ -53,9 +53,6 @@ spec:
         app.kubernetes.io/name: nginx
         app.kubernetes.io/instance: quirky-walrus
     spec:
-      serviceAccountName: quirky-walrus-nginx
-      securityContext:
-        {}
       containers:
         - name: nginx
           securityContext:
