@@ -10,12 +10,12 @@ def main(v1, v2):
     v2 = parse_version(v2)
 
     if v1 > v2:
-      sys.exit(1)
+      return 1
     if v2 > v1:
-      sys.exit(-1)
+      return -1
     else:
-      sys.exit(0)
+      return 0
 
 if __name__ == "__main__":
-  main(sys.argv[1], sys.argv[2])
+  print(main(sys.argv[1], sys.argv[2]))
 
